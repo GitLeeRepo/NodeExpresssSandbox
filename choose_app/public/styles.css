@@ -1,0 +1,486 @@
+
+/* General Styles */
+body {
+    background-color: lightgray;
+    margin: 0 5px 5px 5px;
+}
+
+h1, h2, h3, h4 {
+    color: blue;
+}
+
+p {
+    color: black;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+dl dt h3 {
+    color: black;
+}
+
+dl dt a {
+    margin-left: 10px;
+    color: blue;
+}
+
+a[href^="http://"]:after,
+a[href^="https://"]:after {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);
+    margin: 0 0 0 5px;
+}
+
+a[href*="https://github.com/GitLeeRepo"]:after,
+a[href*="https://gitleerepo.visualstudio.com"]:after {
+    content: '';
+    margin: 0;
+}
+
+/** Primary Page Layout - ordered by top to bottom; left to right; outer to inner */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Navbar */
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #111;
+}
+
+.navbar strong {
+    color:chartreuse;
+}
+
+
+/* Page Heading */
+.pageheading {
+    color: black;
+    margin-top: 55px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* Left sidebar */
+
+.leftsidebar {
+    height: 100%;
+    width: 15%;
+    background-color: whitesmoke;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto;
+    border-style: solid;
+    border-spacing: 1px;
+    padding-left: 5px;
+    padding-top: 15px;
+}
+
+/* a narrower sidebar use in conjunction with .maincontent.wider */
+.leftsidebar.narrower {
+    width: 10%;
+}
+
+.leftsidebar h4, .leftsidebar h5 {
+    color: darkblue;
+    margin: 5px 0 0 0;
+}
+
+.leftsidebar a:link {
+    color: red;
+}
+
+.leftsidebar a:visited {
+    color: royalblue;
+}
+
+/* Main Content - the pages main content positioned to the right of the sidebar */
+.maincontent {
+    margin-left: 12%;
+}
+
+/* a wider version use in conjunction with .leftsidebar.narrower */
+.maincontent.wider {
+    margin-left: 7%;
+}
+
+.sec01 {
+    background-color: white;
+    margin: 0 5% 1% 5%;
+    border-style: solid;
+    border-spacing: 20px;
+    padding-left: 10px;
+    overflow: auto;
+}
+
+.sec01 h2 {
+    margin-bottom: 8px;
+    margin-top: 1px;
+    text-align: center;
+}
+
+.sec01 h3, .sec01 h4 {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.sec01 ul {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.sec01 li {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.sec01 button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.sec01 .panel1col {
+    float: left;
+    width: 98%;
+    vertical-align: top;
+}
+
+    .sec01 .panel1col h2 {
+        margin-bottom: 8px;
+        margin-top: 0;
+    }
+
+    .sec01 .panel1col h3, .sec01 .panel1col h4, .sec01 .panel1col h5 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+.sec01 .panel2col {
+    float: left;
+    width: 50%;
+    vertical-align: top;
+}
+
+    .sec01 .panel2col h2 {
+        margin-bottom: 8px;
+        margin-top: 0;
+    }
+
+    .sec01 .panel2col h3, .sec01 .panel2col h4, .sec01 .panel2col h5 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+.sec01 .panel3col {
+    float: left;
+    width: 33.33%;
+    vertical-align: top;
+}
+
+    .sec01 .panel3col h2 {
+        margin-bottom: 8px;
+        margin-top: 0;
+    }
+
+    .sec01 .panel3col h3, .sec01 .panel3col h4, .sec01 .panel3col h5 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+.sec01 .panel20pct {
+    float: left;
+    width: 20%;
+    vertical-align: top;
+}
+
+    .sec01 .panel20pct h2 {
+        margin-bottom: 8px;
+        margin-top: 0;
+    }
+
+    .sec01 .panel20pct h3, .sec01 .panel20pct h4, .sec01 .panel20pct h5 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+
+.sec01 .panel40pct {
+    float: left;
+    width: 40%;
+    vertical-align: top;
+}
+
+    .sec01 .panel40pct h2 {
+        margin-bottom: 8px;
+        margin-top: 0;
+    }
+
+    .sec01 .panel40pct h3, .sec01 .panel40pct h4, .sec01 .panel40pct h5 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+.sec01 .panel60pct {
+    float: left;
+    width: 60%;
+    vertical-align: top;
+}
+
+    .sec01 .panel60pct h2 {
+        margin-bottom: 8px;
+        margin-top: 0;
+    }
+
+    .sec01 .panel60pct h3, .sec01 .panel60pct h4, .sec01 .panel60pct h5 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+
+.panelheading {
+    margin-bottom: 8px;
+}
+
+/* 
+    sec02 has the same base definition as sec01, so it aligns with sec01,
+    but with no subclasses associated with it, instead using the default
+    element definitions (no subclasses).
+*/
+
+.sec02 {
+    background-color: white;
+    margin: 0 5% 1% 5%;
+    border-style: solid;
+    border-spacing: 20px;
+    padding-left: 10px;
+    overflow: auto;
+}
+
+/* Tables */
+
+.layouttbl2col {
+    width: 98%;
+}
+
+    .layouttbl2col td {
+        width: 50%;
+        vertical-align: top;
+    }
+
+    .layouttbl2col h2 {
+        margin-bottom: 8px;
+        margin-top: 0;
+    }
+
+    .layouttbl2col h3, .layouttbl2col h4, .layouttbl2col h5 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+.layouttbl3col {
+    width: 98%;
+}
+
+    .layouttbl3col td {
+        width: 33.3%;
+        vertical-align: top;
+    }
+
+    .layouttbl3col h2 {
+        margin-bottom: 8px;
+        margin-top: 0;
+    }
+
+    .layouttbl3col h3, .layouttbl3col h4, .layouttbl3col h5 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+
+
+.resultgrid01 {
+    width: 98%;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+    .resultgrid01 th {
+        background-color: cornflowerblue;
+    }
+
+    .resultgrid01 table, .resultgrid01 th, .resultgrid01 td {
+        border: 1px solid black;
+    }
+    .resultgrid01 th, .resultgrid01 td {
+        padding-left: .25rem;
+        padding-right: .25rem;
+    }
+
+    .resultgrid01 .col01 {
+        font-weight: bold;
+        background-color: aqua;
+    }
+
+    .resultgrid01 .colxx {
+        background-color: lightgray;
+    }
+
+/* W3 Schools css for formatting example html, css, and JavaScript code. Use in conjunction with:
+        <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+        <script>w3CodeColor();</script>
+    to provide the color coding
+*/
+
+.w3-container, .w3-panel {
+    padding: 0.01em 16px
+}
+
+.w3-panel {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.w3-example {
+    background-color: #f1f1f1;
+    padding: 0.01em 16px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important
+}
+
+.w3-code, .w3-codespan {
+    font-family: Consolas,"courier new";
+    font-size: 16px
+}
+
+.w3-code {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word
+}
+
+.w3-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%
+}
+
+.w3-card, .w3-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+
+.w3-card-4, .w3-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+}
+
+.form-group{
+    margin-bottom:1rem
+}
+
+.form-control {
+    display:block;
+    margin: 1rem;
+    width:50%;
+    height:calc(2rem + 2px);
+    padding:0.375rem 0.75rem;
+    font-size:0.9375rem;
+    line-height:1.5;
+    color:#495057;background-color:#fff;
+    background-clip:padding-box;
+    border:1px solid #ced4da;
+    border-radius:0;
+}
+
+/* subclasses of .form-control for textarea height */
+
+.form-control.textarea-stdheight {
+    height:calc(4.15625rem + 2px);  
+}
+
+.form-control.textarea-6remheight {
+    height:calc(6.0rem + 2px);  
+}
+
+.form-control.textarea-8remheight {
+    height:calc(8.0rem + 2px);  
+}
+
+.form-control.textarea-10remheight {
+    height:calc(10.0rem + 2px);  
+}
+
+
+.btn {
+    display:inline-block;
+    font-weight:400;text-align:center;
+    white-space:nowrap;
+    vertical-align:middle;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    border:1px solid transparent;
+    padding:0.375rem 0.75rem;
+    font-size:0.9375rem;
+    line-height:1.5;border-radius:0;
+    -webkit-transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, 
+    -webkit-box-shadow 0.15s ease-in-out;
+    transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, 
+    -webkit-box-shadow 0.15s ease-in-out;transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, 
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;transition:color 0.15s ease-in-out, 
+        background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, 
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+    color:#fff;
+    background-color:#2780E3;
+    margin: 1rem;
+    border-color:#2780E3;
+}
+
+    .btn-primary:hover {
+        color:#fff;
+        background-color:#1a6dca;
+        border-color:#1967be;
+    }
+        
+    .btn-primary:focus,
+    .btn-primary.focus{
+        -webkit-box-shadow:0 0 0 0.2rem rgba(39,128,227,0.5);
+        box-shadow:0 0 0 0.2rem rgba(39,128,227,0.5)
+    }
+
+    .btn-primary.disabled,
+    .btn-primary:disabled {
+        color:#fff;
+        background-color:#2780E3;
+        border-color:#2780E3;
+    }

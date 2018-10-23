@@ -1,0 +1,16 @@
+{
+  "name": "customer_app",
+  "version": "1.0.0",
+  "description": "Simple Customer Management App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.6.1",
+    "express": "*"
+  },
+  "author": "Traeven",
+  "license": "ISC"
+}

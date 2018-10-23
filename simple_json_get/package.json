@@ -1,0 +1,15 @@
+{
+  "name": "simple_json_get",
+  "version": "1.0.0",
+  "description": "Simple App that gets JSON output ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*"
+  },
+  "author": "Traeven",
+  "license": "ISC"
+}
